@@ -1,10 +1,11 @@
 package com.example.projetoBigCloud;
 
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Contact;
 import io.swagger.v3.oas.models.info.Info;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class OpenApiConfiguration {
@@ -13,11 +14,11 @@ public class OpenApiConfiguration {
         return new OpenAPI()
                 .info(new Info()
                         .title("IBMEC - CLOUD")
-                        .description("Open API do trabalho de cloud do Spotify")
+                        .description("Open API Spotify")
                         .version("1.0")
                         .contact(new Contact()
-                                .email("1805martinez@gmail.com")
-                                .name("Gabriel Martinez")
+                                .email("raphaelmeres@gmail.com")
+                                .name("Raphael Meres")
                         )
                 );
     }
